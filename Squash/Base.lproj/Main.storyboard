@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Squash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDv-H7-5Jf">
+                                <rect key="frame" x="37.5" y="84" width="300" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bW2-S7-A2w">
+                                        <rect key="frame" x="16" y="16" width="93.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VXJ-Bj-bYa">
+                                        <rect key="frame" x="16" y="44.5" width="195" height="32"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="4242" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DvF-7m-dye">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="32"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textfieldValueChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="61Q-zt-n0q"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="4242" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJm-Tb-khk">
+                                                <rect key="frame" x="49" y="0.0" width="48.5" height="32"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textfieldValueChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Oj1-Ib-eHs"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="4242" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gr2-5a-uGN">
+                                                <rect key="frame" x="97.5" y="0.0" width="49" height="32"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textfieldValueChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="WfJ-dU-MIp"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="4242" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bP-XJ-rBu">
+                                                <rect key="frame" x="146.5" y="0.0" width="48.5" height="32"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textfieldValueChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="mTT-uZ-jRV"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="8YZ-0R-RfJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4823529412" green="0.40784313729999999" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VXJ-Bj-bYa" firstAttribute="top" secondItem="bW2-S7-A2w" secondAttribute="bottom" constant="8" id="XJs-4H-LNR"/>
+                                    <constraint firstItem="bW2-S7-A2w" firstAttribute="leading" secondItem="fDv-H7-5Jf" secondAttribute="leading" constant="16" id="XLl-99-t0o"/>
+                                    <constraint firstItem="VXJ-Bj-bYa" firstAttribute="leading" secondItem="bW2-S7-A2w" secondAttribute="leading" id="bqG-I7-aUl"/>
+                                    <constraint firstItem="VXJ-Bj-bYa" firstAttribute="width" secondItem="fDv-H7-5Jf" secondAttribute="width" multiplier="0.65" id="fuK-tW-OSK"/>
+                                    <constraint firstItem="bW2-S7-A2w" firstAttribute="top" secondItem="fDv-H7-5Jf" secondAttribute="top" constant="16" id="hrt-kl-Huf"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bW2-S7-A2w" secondAttribute="trailing" constant="16" id="iA9-FG-3et"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5o-YV-KES">
+                                <rect key="frame" x="138.5" y="301" width="98" height="30"/>
+                                <state key="normal" title="Start Payment"/>
+                                <connections>
+                                    <action selector="startPayment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6dv-Sa-p6d"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e3-vQ-UVg">
+                                <rect key="frame" x="137" y="347" width="101" height="30"/>
+                                <state key="normal" title="Make Payment"/>
+                                <connections>
+                                    <action selector="makePayment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uq9-JH-tbV"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Number Length" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5h-MD-rd7">
+                                <rect key="frame" x="128.5" y="376" width="118.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kM5-lb-6Ug">
+                                <rect key="frame" x="166.5" y="400" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fDv-H7-5Jf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="0KL-28-CtE"/>
+                            <constraint firstItem="4e3-vQ-UVg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3gd-SC-FJ6"/>
+                            <constraint firstItem="fDv-H7-5Jf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="897-vc-CKz"/>
+                            <constraint firstItem="A5h-MD-rd7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fqq-TV-qr7"/>
+                            <constraint firstItem="w5o-YV-KES" firstAttribute="top" secondItem="fDv-H7-5Jf" secondAttribute="bottom" constant="17" id="KjV-AW-TJi"/>
+                            <constraint firstItem="fDv-H7-5Jf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ct0-qY-MW1"/>
+                            <constraint firstItem="4e3-vQ-UVg" firstAttribute="top" secondItem="w5o-YV-KES" secondAttribute="bottom" constant="16" id="f5Q-QL-psz"/>
+                            <constraint firstItem="A5h-MD-rd7" firstAttribute="top" secondItem="4e3-vQ-UVg" secondAttribute="bottom" constant="-1" id="gk9-xu-H6f"/>
+                            <constraint firstItem="kM5-lb-6Ug" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gqi-Mi-2f2"/>
+                            <constraint firstItem="kM5-lb-6Ug" firstAttribute="top" secondItem="A5h-MD-rd7" secondAttribute="bottom" constant="3" id="i9Q-YF-5RR"/>
+                            <constraint firstItem="fDv-H7-5Jf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="o56-Ms-KiM"/>
+                            <constraint firstItem="w5o-YV-KES" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uya-zJ-TuW"/>
+                            <constraint firstItem="kM5-lb-6Ug" firstAttribute="top" secondItem="4e3-vQ-UVg" secondAttribute="bottom" constant="23" id="z3a-kZ-ke8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardLengthInfoLabel" destination="A5h-MD-rd7" id="kOu-ct-gVo"/>
+                        <outlet property="cardView" destination="fDv-H7-5Jf" id="zjf-zS-0AY"/>
+                        <outlet property="makePaymentButton" destination="4e3-vQ-UVg" id="5Tv-Gk-bSe"/>
+                        <outlet property="numberOfCharLabel" destination="kM5-lb-6Ug" id="SzF-45-UKi"/>
+                        <outlet property="startPaymentButton" destination="w5o-YV-KES" id="i39-sw-m3e"/>
+                        <outletCollection property="cardTextFields" destination="DvF-7m-dye" collectionClass="NSMutableArray" id="pFT-WB-fJe"/>
+                        <outletCollection property="cardTextFields" destination="aJm-Tb-khk" collectionClass="NSMutableArray" id="Ktd-1k-hBh"/>
+                        <outletCollection property="cardTextFields" destination="gr2-5a-uGN" collectionClass="NSMutableArray" id="hg7-G1-Z7S"/>
+                        <outletCollection property="cardTextFields" destination="6bP-XJ-rBu" collectionClass="NSMutableArray" id="Hrw-m6-i0K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
