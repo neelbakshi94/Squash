@@ -26,6 +26,9 @@ class ViewController: UIViewController {
 		let finalColor = initialColor.withAlphaComponent(0.5)
 		let gradientLayer = CAGradientLayer()
 		gradientLayer.colors = [initialColor.cgColor, finalColor.cgColor]
+		//BUG
+		//The bug is that the gradient layer's frame is not being set correctly. I'm using bounds in my code
+		// The fix is on line 33
 		gradientLayer.bounds = self.gradientContainerLayer.bounds
 		self.gradientContainerLayer.addSublayer(gradientLayer)
 	}
@@ -66,6 +69,8 @@ class ViewController: UIViewController {
 		self.gradientContainerLayer.removeFromSuperlayer()
 		self.gradientContainerLayer.frame = self.cardView.bounds
 		self.cardView.layer.insertSublayer(gradientContainerLayer, at: 0)
+		// BUG
+		// Start payment button needs to be set to restart payment when the user has clicked on the start payment button once.
 		self.addGradient(with: 70, green: 44, blue: 118)
 		self.setupTextFields()
 	}
@@ -119,7 +124,10 @@ extension ViewController: UITextFieldDelegate {
 			return false
 		}
 		if newText.count == 0 {
-//			textField.text = newText
+			// BUG
+			// There are four text fields placed inside a stackview with certain spacing
+			// The bug here is that once you've filled the entire card number and no try to delete it, the first character of each text field does not get deleted (try deleting the entire card number once you've filled it).
+			// The fix is to check if all the characters have been deleted from the current text field, then set that as the text for the current text field, then get the previous text field and make is the first responder. Fix on breakpoint line 126
 			self.getPreviousTextField(for: textField)?.becomeFirstResponder()
 			return false
 		}
